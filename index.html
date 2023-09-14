@@ -50,7 +50,7 @@
                 xlink:href="#gentle-wave"
                 x="48"
                 y="0"
-                fill="rgba(255,255,255,0.7"
+                fill="rgba(255,255,255,0.7)"
               />
               <use
                 xlink:href="#gentle-wave"
@@ -77,7 +77,7 @@
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Imac_alu.png"
-              alt=""
+              alt="Apple Imac en Alu"
               class="w-100"
             />
           </div>
@@ -92,10 +92,15 @@
                   <br /><br />
                   <a href="#" id="openMod">Ouvrir la modal</a>
                 </p>
-                <div id="modalWindow">
+                <div
+                  id="modalWindow"
+                  role="dialog"
+                  aria-labelledby="modalTitle"
+                  aria-hidden="true"
+                >
                   <div class="modal">
-                    <button>X</button>
-                    <h2>Quelques liens utiles</h2>
+                    <button aria-label="fermer">X</button>
+                    <h2 id="" modalTitle>Quelques liens utiles</h2>
                     <ul>
                       <li>
                         <a href="https://flukeout.github.io/"
@@ -126,19 +131,22 @@
           </div>
         </div>
       </div>
-      <div id="monDisclosurePart">
+      <div id="overlay"></div>
+      <div aria-label="liens utiles pour la certif" id="monDisclosurePart">
         <h2>Vous trouverez ici un disclosure cassé</h2>
         <div id="monContenu2">
           <img
             src="./images/danny-howe-W9vc6T0NLps-unsplash.jpg"
             id="image2"
-            alt=""
+            alt="foule devant une scène"
           />
-          <button id="useDsicl">
+          <button type="button" id="useDsicl">
             Trouver d'autres informations incroyables
           </button>
           <div id="disclosureWindow">
+            <button id="closeDisclosure" aria-label="Fermer">X</button>
             <h2>D'autres liens utiles (pour votre certification)</h2>
+
             <ul>
               <li>
                 <a href="https://flukeout.github.io/">Entrainement au CSS</a>
